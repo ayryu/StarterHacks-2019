@@ -2,6 +2,7 @@ package com.example.alexr.brightwave;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,7 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView daily = (TextView)findViewById(R.id.daily);
-        TextView weekly = (TextView)findViewById(R.id.weekly);
+        Button daily = (Button) findViewById(R.id.daily);
+        Button weekly = (Button)findViewById(R.id.weekly);
+
+        daily.setOnClickListener((v));
     }
 }
