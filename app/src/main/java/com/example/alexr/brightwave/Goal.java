@@ -1,31 +1,41 @@
 package com.example.alexr.brightwave;
 
+import java.util.Date;
+
 public class Goal {
 
     //var
     private String disc = "";
-    private date end;
+    private Date end;
     private boolean complete = false;
 
     //constructor
-    public Goal(String gdisc, date gend){
+    public Goal(String gdisc, Date gend){
         disc = gdisc;
         end = gend;
     }
 
     //discription setter and getter values
-    public static string getdisc(){
-        return disc;
+    public  String getdisc(){
+        return this.disc;
     }
-    public static void setdisc(String newdisc){
-        disc = newdisc;
+    public void setdisc(String newdisc){
+        this.disc = newdisc;
     }
 
     //deadline setter and getter values
-    public static string getend(){
-        return end;
+    public Date getend(){
+        return this.end;
     }
-    public static void setend(date newend){
-        return disc;
+    public void setend(Date newend){
+        this.end = newend;
+    }
+
+    //complete setter getter
+    public boolean getcomplete(){
+        return this.complete;
+    }
+    public void setcomplete(boolean refresh){
+        this.complete= refresh;
     }
 }
