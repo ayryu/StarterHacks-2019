@@ -1,5 +1,6 @@
 package com.example.alexr.brightwave;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -15,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
         Button daily = (Button) findViewById(R.id.daily);
         Button weekly = (Button)findViewById(R.id.weekly);
 
-        daily.setOnClickListener((v));
+        //daily.setOnClickListener((v));
+
+
+    }
+    public void savedData(){
+        //SharedPreferences userdata = getSharedPreferences();
     }
 }
